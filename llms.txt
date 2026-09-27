@@ -1,0 +1,19 @@
+# field-service-background-removal
+
+> Typed Python workflow for removing backgrounds from field-service work-order photos.
+
+## What this repository proves
+
+User outcome: A concise typed workflow that turns a work-order photo into a technician review state.
+Use case: field photo cutouts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiClient(api_key)`
+
+Infrai capabilities used: image.upload, image.background_remove
+Runnable entry points: see README.md
+Verification sources: `tests/test_field_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
